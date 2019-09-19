@@ -1,8 +1,11 @@
 <template>
-  <v-card max-width="80%" class="mt-5 mx-auto">
-    <v-row justify="center">
-      <div class="text-center">
-        <v-card-text> Already Registered</v-card-text>
+<div >
+  <v-card max-width="100%"   class="back mx-auto">
+    <v-card-title class="justify-center text-white" style=" font-size:53px;"> InDigital </v-card-title>
+      
+    <v-row class="back" justify="center">
+      <div class="text-center text-white">
+        <v-card-text > Already Registered</v-card-text>
         <v-card-actions>
 
           <div class="my-2">
@@ -20,19 +23,27 @@
       </div>
     </v-row>
   </v-card>
+</div>
 </template>
 <script>
 export default {};
 </script>
 <style scoped>
 .login {
-  padding-right: 90px !important;
-  padding-left: 90px !important;
+  padding-right: 120px !important;
+  padding-left: 130px !important;
 }
 .register{
-  padding-right: 70px !important;
-  
-  padding-left: 80px !important;
+  padding-right: 100px !important;
+  margin-bottom: 340px;
+  padding-left: 125px !important;
+}
+.back{
+background-image: linear-gradient(
+    to top right,
+    rgb(112, 47, 137),
+    rgb(186, 54, 113)
+  );
 }
 
 </style>
