@@ -25,7 +25,7 @@
                     src="https://picsum.photos/510/300?random"
                     width=" 100%"
                     height="300px"
-                    aspect-ratio="1.7"
+                    aspect-ratio="2.7"
                   ></v-img>
 
                   <Input
@@ -33,8 +33,12 @@
                     v-model="stbnumber"
                     placeholder="eg : 12345"
                   />
-                  <v-btn color="primary" @click="e1 = 2">Continue</v-btn>
-                </v-expansion-panel-content>
+                  <v-btn rounded color="primary" @click="e1 = 2">Submit</v-btn>
+                  
+                <router-link to="/login">
+                  <v-btn text color="primary" >Cancel</v-btn>
+                </router-link>
+                  </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
           </div>
@@ -56,8 +60,13 @@
                     v-model="stbnumber"
                     placeholder="eg : 12345"
                   />
-                  <v-btn color="primary" @click="e1 = 2">Continue</v-btn>
-                </v-expansion-panel-content>
+                   <v-btn rounded color="primary" @click="e1 = 2">Submit</v-btn>
+                  
+                <router-link to="/login">
+                  <v-btn text color="primary" >Cancel</v-btn>
+                </router-link>
+                 
+                  </v-expansion-panel-content>
               </v-expansion-panel>
             </v-expansion-panels>
           </div>
@@ -99,7 +108,7 @@
               />
 
 
-              <v-btn color="primary" @click="e1 = 3">Next</v-btn>
+              <v-btn rounded color="primary" @click="e1 = 3">Next</v-btn>
             </v-card-text>
           </v-card>
         </v-stepper-content>
@@ -172,15 +181,14 @@ export default {
     margin-right: 0px !important;
   }
 }
-</style>
-<style scoped>
+
 .v-stepper__header {
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   background-image: linear-gradient(
     to top right,
-    rgb(112, 47, 137),
-    rgb(186, 54, 113)
+    rgb(112, 47, 137) ,
+    rgb(186, 54, 113) 55%
   );
   height: 190px;
   margin-bottom: -110px;
@@ -189,5 +197,10 @@ export default {
   padding-right: 5rem !important;
   padding-left: 5rem !important;
 }
+</style>
+<style>
+.v-btn:focus{
+  outline: none !important;
 
+}
 </style>

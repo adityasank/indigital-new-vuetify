@@ -5,6 +5,12 @@ import Login from './views/Authentication/Login.vue'
 
 import Register from './views/Authentication/Register.vue'
 
+import Register1 from './views/Authentication/Register1.vue'
+
+import Register2 from './views/Authentication/Register2.vue'
+
+import Otp from './views/Authentication/Otp.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +42,24 @@ export default new Router({
     name: 'Register',
     component: Register
   },
+  
+  {
+    path: '/Register1',
+    name: 'Register1',
+    component: Register1
+  },
+  {
+    path: '/Register2',
+    name: 'Register2',
+    component: Register2
+  },
+  
+  {
+    path: '/Otp',
+    name: 'Otp',
+    component: Otp
+  }
+  
   
 
   ],
