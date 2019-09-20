@@ -7,7 +7,6 @@
         <v-divider></v-divider>
 
         <v-stepper-step :complete="e1 > 2" step="2"></v-stepper-step>
-
         <v-divider></v-divider>
 
         <v-stepper-step class="mr-12" step="3"></v-stepper-step>
