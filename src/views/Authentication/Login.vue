@@ -33,7 +33,9 @@
       </v-card-actions>
       <v-card-actions>
         <v-row justify="center">
-          <v-btn text class="login" onclick="this.blur();" rounded color="primary">Forgot password</v-btn>
+          <router-link to="/ForgotPassword">
+          <v-btn text class="login"  rounded color="primary">Forgot password</v-btn>
+          </router-link>
         </v-row>
         <div></div>
       </v-card-actions>

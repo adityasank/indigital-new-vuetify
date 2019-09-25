@@ -10,6 +10,8 @@ import Register1 from './views/Authentication/Register1.vue'
 import Register2 from './views/Authentication/Register2.vue'
 
 import Otp from './views/Authentication/Otp.vue'
+import ForgotPassword from './views/Authentication/ForgotPassword.vue'
+import Dashboard from './views/Dashboard.vue'
 
 Vue.use(Router)
 
@@ -58,7 +60,18 @@ export default new Router({
     path: '/Otp',
     name: 'Otp',
     component: Otp
-  }
+  },
+  
+  {
+    path: '/ForgotPassword',
+    name: 'ForgotPassword',
+    component: ForgotPassword
+  },
+  {
+    path: '/Dashboard',
+    name: 'Dashboard',
+    component: Dashboard
+  },
   
   
 
